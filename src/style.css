@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --primary-50: 252 243 248;
+  --primary-100: 250 231 243;
+  --primary-200: 246 207 233;
+  --primary-300: 239 168 214;
+  --primary-400: 231 130 194;
+  --primary-500: 224 100 174;
+  --primary-600: 202 91 158;
+  --primary-700: 174 78 138;
+  --primary-800: 148 66 118;
+  --primary-900: 114 51 90;
+  --primary-950: 77 34 61;
+  --surface-0: 255 255 255;
+  --surface-50: 252 248 252;
+  --surface-100: 250 244 249;
+  --surface-200: 244 230 243;
+  --surface-300: 238 215 237;
+  --surface-400: 220 183 222;
+  --surface-500: 202 150 207;
+  --surface-600: 182 127 187;
+  --surface-700: 161 109 166;
+  --surface-800: 133 89 136;
+  --surface-900: 99 66 102;
+  --surface-950: 66 43 68;  
+
+  --primary: var(--primary-500);
+  --primary-inverse: var(--surface-0);
+  --primary-hover: var(--primary-600);
+  --primary-active-color: var(--primary-600);
+
+  --primary-highlight-opacity: 0.1;
+  --primary-highlight-inverse: var(--primary-700);
+  --primary-highlight-hover-opacity: 0.2;
+}
+.dark{
+  --primary: var(--primary-400);
+  --primary-inverse: var(--surface-900);
+  --primary-hover: var(--primary-300);
+  --primary-active-color: var(--primary-300);
+
+  --primary-highlight-opacity: 0.2;
+  --primary-highlight-inverse: var(--surface-0);
+  --primary-highlight-hover-opacity: 0.3;
+}
+
+.customized-primary {
+  &:not(.dark){
+      --primary: var(--primary-950);
+      --primary-inverse: var(--surface-0);
+      --primary-hover: var(--primary-800);
+      --primary-active-color: var(--primary-900);
+
+      --primary-highlight-opacity: 1;
+      --primary-highlight-inverse: var(--surface-0);
+      --primary-highlight-hover-opacity: 0.8;
+  }
+  &.dark{
+      --primary: var(--primary-50);
+      --primary-inverse: var(--surface-950);
+      --primary-hover: var(--primary-100);
+      --primary-active-color: var(--primary-100);
+
+      --primary-highlight-opacity: 0.1;
+      --primary-highlight-inverse: var(--surface-0);
+      --primary-highlight-hover-opacity: 0.2;
+
+  }
+}
+
+
+*::before *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
