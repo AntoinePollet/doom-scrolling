@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Gabarito';
+  src: url('../public/Gabarito/static/Gabarito-Regular.ttf');
+}
+html {
+  font-family: 'Gabarito';
+}
+
+h1 {
+  color: #2F303C;
+  font-size: 60px;
+}
+
+*::before *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
